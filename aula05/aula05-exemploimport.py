@@ -1,5 +1,6 @@
 from aula05_metodo_crawller import *
 
+#ajudata git
 print("Dollar: " + str(getDollar()))
 print("Euro: " + str(getEuro()))
 temp = getTemperatura()
