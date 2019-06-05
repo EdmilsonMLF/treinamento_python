@@ -15,8 +15,8 @@ def unescapeString(s):
     return s
 
 url = 'http://www.buscacep.correios.com.br/sistemas/buscacep/resultadoBuscaCepEndereco.cfm'
-#post_fields = {'relaxation': '60320360', 'tipoCEP': 'ALL', 'semelhante': 'N'}
-post_fields = {'relaxation': '60761580', 'tipoCEP': 'ALL', 'semelhante': 'N'}
+post_fields = {'relaxation': '60320360', 'tipoCEP': 'ALL', 'semelhante': 'N'}
+#post_fields = {'relaxation': '60761580', 'tipoCEP': 'ALL', 'semelhante': 'N'}
 
 request = Request(url, urlencode(post_fields).encode())
 result = urlopen(request).read()
